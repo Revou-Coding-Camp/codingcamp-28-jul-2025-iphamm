@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Sinergi Solusi Digital - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/company-logo.jpg" alt="Logo Sinergi Digital"> <span>Sinergi Solusi Digital</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="profile.html">Our Profile</a></li>
+                    <li><a href="index.html#message-us-section">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1 id="welcomeMessage"></h1>
+                <p class="tagline">Inovasi Digital untuk Masa Depan Bisnis Anda</p>
+            </div>
+        </section>
+
+        <section class="counter-section">
+            <div class="container">
+                <p>Bersama kami, transformasi digital bisnis Anda adalah kenyataan.</p> </div>
+        </section>
+
+        <section class="headquarter-section">
+            <div class="container">
+                <h2>Kantor Pusat Kami</h2>
+                <div class="hq-locations">
+                    <div class="location-item">
+                        <a href="https://www.google.com/maps/search/Jakarta" target="_blank" rel="noopener noreferrer">
+                            <div class="circle">
+                                <img src="./img/jakarta.jpg" alt="Kantor Jakarta" class="location-image">
+                            </div>
+                            <p>Jakarta</p>
+                        </a>
+                    </div>
+                    <div class="location-item">
+                        <a href="https://www.google.com/maps/search/Bandung" target="_blank" rel="noopener noreferrer">
+                            <div class="circle">
+                                <img src="./img/bandung.jpg" alt="Kantor Bandung" class="location-image">
+                            </div>
+                            <p>Bandung</p>
+                        </a>
+                    </div>
+                    <div class="location-item">
+                        <a href="https://www.google.com/maps/search/Surabaya" target="_blank" rel="noopener noreferrer">
+                            <div class="circle">
+                                <img src="./img/surabaya.jpg" alt="Kantor Surabaya" class="location-image">
+                            </div>
+                            <p>Surabaya</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us-section" class="message-us-section">
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                <div class="message-content">
+                    <form id="messageForm" class="message-form">
+                        <div class="form-group">
+                            <label for="fullName">Nama Lengkap</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthDate">Tanggal Lahir</label>
+                            <input type="date" id="birthDate" name="birthDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Jenis Kelamin</label>
+                            <div class="radio-group">
+                                <input type="radio" id="genderMale" name="gender" value="Laki-Laki" required>
+                                <label for="genderMale">Laki-Laki</label>
+                                <input type="radio" id="genderFemale" name="gender" value="Perempuan">
+                                <label for="genderFemale">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageText">Pesan Anda</label>
+                            <textarea id="messageText" name="messageText" placeholder="Sampaikan pertanyaan atau pesan Anda di sini" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Kirim Pesan</button>
+                    </form>
+
+                    <div class="form-output" id="formDataDisplay">
+                        <p>Waktu Pengiriman: <span id="currentTimeDisplay"></span></p>
+                        <p><strong>Nama:</strong> <span id="displayName"></span></p>
+                        <p><strong>Tanggal Lahir:</strong> <span id="displayBirthDate"></span></p>
+                        <p><strong>Jenis Kelamin:</strong> <span id="displayGender"></span></p>
+                        <p><strong>Pesan:</strong> <span id="displayMessage"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sinergi Solusi Digital. All rights reserved. Dibuat oleh Ilham.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
